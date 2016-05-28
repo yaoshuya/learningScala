@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+organizeimports.expandcollapse=expand
+organizeimports.groups=java$scala$org$com
+organizeimports.useProjectSpecificSettings=false
+organizeimports.wildcards=scalaz$scalaz.Scalaz
+scala.compiler.additionalParams=\ -Xsource\:2.10 -Ymacro-expand\:none
+scala.compiler.installation=-325782498
+scala.compiler.sourceLevel=2.10
+scala.compiler.useProjectSettings=true

@@ -1,8 +1,57 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.student</groupId>
   <artifactId>learningScala</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+		<scala.version>2.10.6</scala.version>
+		<!-- 跳过测试 -->
+		<plugin.maven-surefire>2.18.1</plugin.maven-surefire>
+		<skipTests>true</skipTests>
+	</properties>
+  
+  
+	<repositories>
+		<repository>
+			<id>scala-tools.org</id>
+			<name>Scala-Tools Maven2 Repository</name>
+			<url>http://scala-tools.org/repo-releases</url>
+		</repository>
+	</repositories>
+	
+    <pluginRepositories>
+		<pluginRepository>
+			<id>scala-tools.org</id>
+			<name>Scala-Tools Maven2 Repository</name>
+			<url>http://scala-tools.org/repo-releases</url>
+		</pluginRepository>
+	</pluginRepositories>
+	
+  <dependencies>
+  
+	<dependency>
+	   <groupId>org.scala-lang</groupId>
+	   <artifactId>scala-library</artifactId>
+	   <version>${scala.version}</version>
+	</dependency>
+		
+	<dependency>
+    <groupId>com.typesafe.akka</groupId>
+    <artifactId>akka-actor_2.10</artifactId>
+    <version>2.3.15</version>
+	</dependency>
+
+	<dependency>
+    <groupId>com.typesafe.akka</groupId>
+    <artifactId>akka-remote_2.10</artifactId>
+    <version>2.3.15</version>
+	</dependency>
+
+ </dependencies>
+
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>

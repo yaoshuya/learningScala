@@ -18,4 +18,13 @@ object breaks extends App {
              loop.break;
          }
      }
+    
+    var go = true;
+    for(i <- numList ; if(go))
+    {
+      if(i==4) 
+        go=false
+      println(i)
+    }
+    
 }
